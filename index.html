@@ -11,27 +11,27 @@
     <h1>Papa Wario's Pizza Parlor</h1>
     <form>
         <select id="sizeSelect">
-            <option>Select Size</option>
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
+            <option value="0">Select Size</option>
+            <option value="4">Small</option>
+            <option value="6">Medium</option>
+            <option value="8">Large</option>
         </select><br>
         <label>
-            <input type="radio" value="Pepperoni">
+            <input name="topping" type="checkbox" value="1.25">
             Pepperoni
         </label><br>
         <label>
-            <input type="radio" value="Mushrooms">
+            <input id="topping" type="checkbox" value="1.75">
             Mushrooms
         </label><br>
         <label>
-            <input type="radio" value="Fire Flower">
+            <input id="topping" type="checkbox" value="2.00">
             Fire Flower
         </label><br>
         <button id="submit">Submit</button>
     </form>
     <p>Your Order:<span id="orderSummary"></span> </p>
-    <p>Total Price: <span id="totalPrice"></span> </p>
+    <p>Total Price: $<span id="totalPrice"></span> </p>
 </body>
 
 </html>
