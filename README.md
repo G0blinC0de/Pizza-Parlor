@@ -21,6 +21,10 @@ _Users can order a pizza with topping and see the resulting price based on toppi
 
 #### Tests
 
+Describe: Pizza();
+Test: "It should return a Pizza object with user selected topping properties and size."
+Code: const userPizza = new Pizza(["Mushrooms", "Fire Flower"], "Large");
+Expected Output: Pizza {toppings: ["Mushrooms", "Fire Flower"], size: "Large" }
 
 
 ## Setup/Installation Requirements
