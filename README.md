@@ -36,7 +36,7 @@ Code:
 const userToppings = ["Mushrooms", "Pepperoni"]
 toppingSelect(userToppings)
 Expected Output: 
-toppingTotal = 6.00
+toppingTotal = 6
 
 Describe: priceCalculator()
 
@@ -44,7 +44,7 @@ Test: "It should add/sum the total of each topping selection and size."
 Code: 
 priceCalculator(userPizza)
 Expected Output: 
-"Your Total: $12.50
+"Your Total: $12.50"
 
 
 ## Setup/Installation Requirements

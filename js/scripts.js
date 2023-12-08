@@ -1,9 +1,19 @@
+// Business Logic
+
 function Pizza(size, toppings) {
     this.toppings = toppings.join(", ");
     this.size = size;
 };
 
+Pizza.prototype.toppingSelect = function () {
 
+}
+
+//Ui Logic
+
+
+
+// -- Idea notes --
 // Leaving Comment here to describe ideas
 
 // Each size should have an associated value instead of a function
