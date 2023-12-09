@@ -25,7 +25,7 @@ Describe: Pizza()
 
 Test: "It should return a Pizza object with user selected topping properties and size, and store topping price and size price."
 Code: 
-const userPizza = new Pizza(["Mushrooms", "Fire Flower"], "Large");
+const userPizza = new Pizza(Large, ["Mushrooms", "Fire Flower"]);
 Expected Output: 
 Pizza {toppings: ["Mushrooms", "Fire Flower"], size: "Large" }
 
@@ -33,9 +33,9 @@ Describe: calculateTotalPrice()
 
 Test: "It should sum the values of size and toppings for a total price."
 Code:
-calculateOrder(userPizza)
+calculateTotalPrice(userPizza);
 Expected Output:
-"Your Total Is: $5.75
+"Your Total Is: $5.75"
 
 
 ## Setup/Installation Requirements
