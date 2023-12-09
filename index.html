@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Papa Wario's Pizza Parlor</title>
 </head>
 
 <body>
-    <h1>Papa Wario's Pizza Parlor</h1>
-    <form>
-        <select id="sizeSelect">
+    <h1 class="boxshadow">Papa Wario's Pizza Parlor</h1>
+    <form class="boxshadow">
+        <select class="button" id="sizeSelect">
             <option value="0">Select Size</option>
             <option value="4">Small</option>
             <option value="6">Medium</option>
             <option value="8">Large</option>
-        </select><br>
+        </select>
         <label>
             <input name="topping" type="checkbox" value="1.25">
             Pepperoni
@@ -28,11 +29,13 @@
             <input name="topping" type="checkbox" value="2.00">
             Fire Flower
         </label><br>
-        <button id="submit">Submit</button>
+        <button class="button" id="submit">Submit</button>
     </form>
-    <p>Your Order:<span id="orderSummary"></span> </p>
-    <p>Total Price: $<span id="totalPrice"></span> </p>
-    <script src="js/scripts.js"></script>
+    <div class="boxshadow">
+        <p>Your Order: <br><span id="orderSummary"></span> </p>
+        <p>Total Price: $<span id="totalPrice"></span> </p>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>
