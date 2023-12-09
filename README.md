@@ -21,30 +21,21 @@ _Users can order a pizza with topping and see the resulting price based on toppi
 
 #### Tests
 
-Describe: Pizza();
+Describe: Pizza()
 
-Test: "It should return a Pizza object with user selected topping properties and size."
+Test: "It should return a Pizza object with user selected topping properties and size, and store topping price and size price."
 Code: 
 const userPizza = new Pizza(["Mushrooms", "Fire Flower"], "Large");
 Expected Output: 
 Pizza {toppings: ["Mushrooms", "Fire Flower"], size: "Large" }
 
-Describe: toppingSelect()
+Describe: calculateTotalPrice()
 
-Test: "It should calculate total topping price and return as toppingTotal value."
-Code: 
-const userToppings = ["Mushrooms", "Pepperoni"]
-toppingSelect(userToppings)
-Expected Output: 
-toppingTotal = 6
-
-Describe: priceCalculator()
-
-Test: "It should add/sum the total of each topping selection and size."
-Code: 
-priceCalculator(userPizza)
-Expected Output: 
-"Your Total: $12.50"
+Test: "It should sum the values of size and toppings for a total price."
+Code:
+calculateOrder(userPizza)
+Expected Output:
+"Your Total Is: $5.75
 
 
 ## Setup/Installation Requirements

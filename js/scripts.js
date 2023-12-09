@@ -1,30 +1,27 @@
 // Business Logic
 
 function Pizza(size, toppings) {
-    this.toppings = toppings.join(", ");
     this.size = size;
+    this.toppings = toppings;
 };
 
-Pizza.prototype.toppingSelect = function () {
+let userPizza = new Pizza(size, toppings)
 
-}
+Pizza.prototype.calculateTotalPrice = function () {
+    const sizeValue = parseFloat(document.getElementById('sizeSelect').value);
+    const toppingElements = document.getElementsByName('topping');
+    let totalPrice = sizeValue;
+
+    for (let topping of toppingElements) {
+        if (topping.checked) {
+            totalPrice += parseFloat(topping.value);
+        }
+    }
+
+    return totalPrice;
+};
+
 
 //Ui Logic
 
 
-
-// -- Idea notes --
-// Leaving Comment here to describe ideas
-
-// Each size should have an associated value instead of a function
-
-// Selecting Small is a value of 4, Medium 6, Large 8
-
-// Toppings have values with variations of 1.25, 1.50, 1.75
-
-// priceCalculator should then simply add/sum these values and return them
-// in the totalPrice span
-
-// We then need a function that summarizes the order and asks for a nameInput
-//for the order. So we need to convert Pizza() to a string, starting with size,
-//which means size should be in the 0 position
