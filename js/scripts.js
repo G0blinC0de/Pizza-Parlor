@@ -43,7 +43,7 @@ function generateOrderSummary() {
 
 document.getElementById('submit').addEventListener('click', function (event) {
     event.preventDefault();
-
+    const nameInput = document.getElementById('nameInput').value;
     const size = document.getElementById('sizeSelect').options[document.getElementById('sizeSelect').selectedIndex].text;
     const toppingElements = document.getElementsByName('topping');
     const selectedToppings = Array.from(toppingElements).filter(topping => topping.checked)
@@ -53,7 +53,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
     userPizza = new Pizza(size, selectedToppings);
     let totalPrice = userPizza.calculateTotalPrice();
     let orderSummary = generateOrderSummary();
-
+    document.getElementById('nameOutput').textContent = nameInput;
     document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
     document.getElementById('orderSummary').textContent = orderSummary;
 });

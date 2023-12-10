@@ -15,6 +15,8 @@
 <body>
     <h1 class="boxshadow warioCoin">Papa Wario's <br> Pizza Parlor</h1>
     <form class="boxshadow">
+        <h2>Name for the Order:</h2>
+        <input type="text" id="nameInput" class="button">
         <select class="button" id="sizeSelect">
             <option value="0">Select Size</option>
             <option value="4">Small</option>
@@ -38,13 +40,12 @@
 
 
     <div class="boxshadow">
-        <div class="container">
-            <p>Your Order: <br><span id="orderSummary"></span> </p>
-            <p>Total Price: $<span id="totalPrice"></span> </p>
-            <link rel="stylesheet" href="css/styles.css" type="text/css">
-            <script src="js/scripts.js"></script>
-        </div>
+        <p>Thanks for your Order, <span id="nameOutput"></span>! </p>
+        <p>Your Order: <br><span id="orderSummary"></span> </p>
+        <p>Total Price: $<span id="totalPrice"></span> </p>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
     </div>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
