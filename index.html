@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Allison&family=Bungee+Spice&family=Libre+Bodoni&family=Nabla&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Papa Wario's Pizza Parlor</title>
 </head>
 
 <body>
-    <h1 class="boxshadow">Papa Wario's Pizza Parlor</h1>
+    <h1 class="boxshadow warioCoin">Papa Wario's <br> Pizza Parlor</h1>
     <form class="boxshadow">
         <select class="button" id="sizeSelect">
             <option value="0">Select Size</option>
@@ -35,11 +35,16 @@
         </label><br>
         <button class="button" id="submit">Submit</button>
     </form>
+
+
     <div class="boxshadow">
-        <p>Your Order: <br><span id="orderSummary"></span> </p>
-        <p>Total Price: $<span id="totalPrice"></span> </p>
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <script src="js/scripts.js"></script>
+        <div class="container">
+            <p>Your Order: <br><span id="orderSummary"></span> </p>
+            <p>Total Price: $<span id="totalPrice"></span> </p>
+            <link rel="stylesheet" href="css/styles.css" type="text/css">
+            <script src="js/scripts.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>

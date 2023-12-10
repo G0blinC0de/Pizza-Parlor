@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bungee+Spice&family=Libre+Bodoni&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
 @keyframes rotate {
     from {
@@ -6,7 +6,7 @@
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(720deg);
     }
 }
 
@@ -39,4 +39,14 @@
     flex-direction: column;
 }
 
-.body {}
+body {
+    font-family: 'Bungee Spice';
+
+}
+
+.warioCoin {
+    background-image: url('../images/warioprofile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
