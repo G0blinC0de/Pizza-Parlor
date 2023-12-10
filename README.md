@@ -48,7 +48,7 @@ Expected Output:
 
 Alternate Path
 * _Navigate to URL_
-* 
+* https://g0blinc0de.github.io/Pizza-Parlor/
 
 
 
