@@ -23,7 +23,7 @@ _Users can order a pizza with topping and see the resulting price based on toppi
 
 Describe: Pizza()
 
-Test: "It should return a Pizza object with user selected topping properties and size, and store topping price and size price."
+Test: "It should return a Pizza object with user selected topping properties and size"
 Code: 
 const userPizza = new Pizza(Large, ["Mushrooms", "Fire Flower"]);
 Expected Output: 
