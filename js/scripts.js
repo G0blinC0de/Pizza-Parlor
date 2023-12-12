@@ -4,15 +4,13 @@ function Pizza(size, selectedToppings) {
     this.selectedToppings = selectedToppings;
 };
 
-let userPizza;
+
 
 // takes values from size and topping selections and sums them into totalPrice span
 Pizza.prototype.calculateTotalPrice = function () {
-    const sizeValue = parseFloat(document.getElementById('sizeSelect').value);
-    const toppingElements = document.getElementsByName('topping');
-    let totalPrice = sizeValue;
+    let totalPrice = parseFloat(this.size);
 
-    for (let topping of toppingElements) {
+    for (let topping of this.selectedToppings) {
         if (topping.checked) {
             totalPrice += parseFloat(topping.value);
         }
@@ -50,8 +48,8 @@ document.getElementById('submit').addEventListener('click', function (event) {
         .map(topping => topping.parentNode.textContent.trim());
 
 
-    userPizza = new Pizza(size, selectedToppings);
-    let totalPrice = userPizza.calculateTotalPrice();
+    let userPizza = new Pizza(size, selectedToppings);
+    let totalPrice = parseFloat(userPizza.calculateTotalPrice());
     let orderSummary = generateOrderSummary();
     document.getElementById('nameOutput').textContent = nameInput;
     document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);

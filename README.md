@@ -32,10 +32,11 @@ Pizza {toppings: ["Mushrooms", "Fire Flower"], size: "Large" }
 Describe: calculateTotalPrice()
 
 Test: "It should sum the values of size and toppings for a total price."
-Code:
-calculateTotalPrice(userPizza);
+Code: 
+let userPizza = new Pizza("Small", ["Pepperoni, Mushroom"]);
+userPizza.calculateTotalPrice();
 Expected Output:
-"Your Total Is: $5.75"
+"Your Total Is: $8.00"
 
 
 ## Setup/Installation Requirements
