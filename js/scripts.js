@@ -4,7 +4,7 @@ function Pizza(size, selectedToppings) {
     this.selectedToppings = selectedToppings;
 };
 
-let userPizza;
+
 
 // takes values from size and topping selections and sums them into totalPrice span
 Pizza.prototype.calculateTotalPrice = function () {
@@ -48,7 +48,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
     const toppingElements = document.getElementsByName('topping');
 
 
-    userPizza = new Pizza(size, toppingElements);
+    let userPizza = new Pizza(size, toppingElements);
     let totalPrice = userPizza.calculateTotalPrice();
     let orderSummary = generateOrderSummary();
     document.getElementById('nameOutput').textContent = nameInput;
